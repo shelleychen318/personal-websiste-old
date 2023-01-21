@@ -36,7 +36,7 @@ const NavBar = () => {
                 {links.map(({id, link}) => (
                     <li 
                     key={id}
-                    className="mx-4 cursor-pointer bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-300 ease-out"
+                    className="mx-6 cursor-pointer bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
                     >{link}
                     </li>
                 ))}
