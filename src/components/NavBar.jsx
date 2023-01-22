@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+// import { FaBars, FaTimes } from 'react-icons/fa'
 import { HiBars2, HiXMark } from "react-icons/hi2";
 
 
@@ -51,7 +51,7 @@ const NavBar = () => {
 
             {/* only show nav bar when nav icon is pressed */}
             {nav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen">
+                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-bg_colour">
                     {links.map(({id, link}) => (
                         <li 
                         key={id}
