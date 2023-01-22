@@ -5,12 +5,12 @@ import { HiArrowRight } from 'react-icons/hi';
 const Home = () => {
   return (
     <div name="home" className="h-screen w-full">
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row">
+        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row md:border-b-4 border-b-dark_beige">
             <div className="flex flex-col justify-center h-full mx-4 md:mx-20">
-                <h2 className="text-4xl font-semibold sm:text-6xl">
+                <h2 className="text-4xl font-semibold sm:text-7xl">
                     Hi, I'm Shelley!
                 </h2>
-                <p className="py-4 max-w-lg md:text-lg">
+                <p className="py-6 max-w-lg md:text-xl">
                     I am first year Systems Design Engineering student at the University of Waterloo! 
                 </p>
 
@@ -28,7 +28,7 @@ const Home = () => {
                 <img 
                     src={Person} 
                     alt="person" 
-                    className="rounded-2xl mx-auto w-2/3 md:w-full"/>
+                    className="rounded-3xl mx-auto w-2/3 md:w-full"/>
             </div>
         </div>
     </div>

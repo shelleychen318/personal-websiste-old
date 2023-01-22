@@ -11,7 +11,7 @@ module.exports = {
       dark_beige: '#e3dacd',
       text_colour: '#1f1d1d',
       pink: '#f8c1ca',
-      gray: '#989491'
+      gray: '#7c7774'
     },
   },
   plugins: [],

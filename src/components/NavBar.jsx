@@ -27,7 +27,7 @@ const NavBar = () => {
     ];  
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 fixed">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed">
             <div className="font-medium ml-10">
                 <a href="#">SHELLEY CHEN</a>
             </div>
@@ -36,7 +36,7 @@ const NavBar = () => {
                 {links.map(({id, link}) => (
                     <li 
                     key={id}
-                    className="mx-6 cursor-pointer bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
+                    className="mx-6 cursor-pointer bg-left-bottom bg-gradient-to-r from-dark_beige to-dark_beige bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
                     >{link}
                     </li>
                 ))}
