@@ -6,7 +6,10 @@ const Home = () => {
   return (
     <div name="home" className="h-screen w-full">
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row md:border-b-4 border-b-dark_beige">
-            <div className="flex flex-col justify-center h-full mx-4 md:mx-20">
+
+            
+
+            <div className="flex flex-col justify-center items-center mx-4 md:mx-20 md:items-baseline">
                 <h2 className="text-4xl font-semibold sm:text-7xl">
                     Hi, I'm Shelley!
                 </h2>
@@ -24,7 +27,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="">
                 <img 
                     src={Person} 
                     alt="person" 
