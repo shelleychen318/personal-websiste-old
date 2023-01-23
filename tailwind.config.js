@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      logo: ['Playfair Display'],
+    },
 
     colors: {
       light_beige: '#f3eee8',
@@ -16,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

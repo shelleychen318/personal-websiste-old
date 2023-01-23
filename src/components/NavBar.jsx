@@ -29,9 +29,14 @@ const NavBar = () => {
     ];  
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10 ">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10">
             <div className="ml-2 font-medium md:ml-10">
-                <a href="#">SHELLEY CHEN</a>
+                <Link to="home" smooth duration={500}
+                className="cursor-pointer text-2xl font-logo">
+                    shelley chen
+                </Link>
+
+                {/* <a href="#" className="text-2xl font-logo">shelley chen</a> */}
             </div>
 
             <ul className="hidden md:flex">
