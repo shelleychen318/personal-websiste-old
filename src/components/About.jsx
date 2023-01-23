@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div name="about" className="w-full h-screen">
-        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full h-full md:border-b-4 border-b-dark_beige">
+        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full h-full sm:border-b-4 border-b-dark_beige">
             <div className="pb-8">
                 <p className="text-5xl font-semibold">About</p>
             </div>

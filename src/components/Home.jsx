@@ -2,6 +2,7 @@ import React from 'react';
 import Person from '../assets/img/person.jpeg';
 import { HiArrowRight } from 'react-icons/hi';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Home = () => {
 
@@ -24,13 +25,14 @@ const Home = () => {
 
     return (
         <div name="home" className="h-screen w-full">
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row md:border-b-4 border-b-dark_beige">
+            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row sm:border-b-4 border-b-dark_beige">
 
             <div className="hidden lg:flex flex-col top-[45%]">
                 <ul>
                     {links.map(({ id, child, href }) => (
                         <li key={id} className="flex justify-between items-center h-14 hover:text-gray" >
-                        <a href={href} 
+                        <a 
+                            href={href} 
                             className="flex justify-between items-center w-full"
                             target="_blank"
                             rel="noreferrer"
@@ -51,12 +53,17 @@ const Home = () => {
                     </p>
 
                     <div>
-                        <button className="group text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-pink cursor-pointer">
+                        <Link 
+                            to="portfolio" 
+                            smooth 
+                            duration={500} 
+                            className="group text-white w-fit px-5 py-3 my-2 flex items-center rounded-md bg-pink cursor-pointer"
+                            >
                             Portfolio
                             <span className="group-hover:rotate-90 duration-300">
                                 <HiArrowRight className="ml-1" />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
