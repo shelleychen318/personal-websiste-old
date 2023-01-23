@@ -11,7 +11,7 @@ const Home = () => {
             child:(
                 <FaLinkedinIn size={30} />
             ),
-            href:'https://linkedin.com'
+            href:'https://linkedin.com/in/shelleychenn'
         },
         {
             id: 2,

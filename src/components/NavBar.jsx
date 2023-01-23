@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import { FaBars, FaTimes } from 'react-icons/fa'
 import { HiBars2, HiXMark } from "react-icons/hi2";
-
+import Resume from '../assets/pdf/Resume_Fall_2022.pdf';
 
 const NavBar = () => {
 
@@ -22,12 +22,14 @@ const NavBar = () => {
         },
         {
             id: 4,
-            link: 'Resume'
+            link: 'Resume',
+            href: Resume,
+            
         }
     ];  
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10">
             <div className="ml-2 font-medium md:ml-10">
                 <a href="#">SHELLEY CHEN</a>
             </div>
