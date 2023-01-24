@@ -133,7 +133,7 @@ const Portfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live Demo
+                    Demo
                   </a>
                   {/* // ))} */}
                 </div>

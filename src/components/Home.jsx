@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div name="home" className="h-screen w-full">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row sm:border-b-4 border-b-dark_beige">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row border-b-4 border-b-dark_beige">
         <div className="hidden lg:flex flex-col top-[45%]">
           <ul>
             {links.map(({ id, child, href }) => (
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center mx-4 md:mx-20 md:items-baseline">
-          <h2 className="text-4xl font-semibold sm:text-7xl">
+          <h2 className="text-3xl font-bold sm:text-7xl">
             Hi, I'm Shelley!
           </h2>
           <p className="py-6 max-w-lg md:text-xl">
