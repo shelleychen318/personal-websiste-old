@@ -32,7 +32,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10">
             <div className="ml-2 font-medium md:ml-10">
                 <Link to="home" smooth duration={500}
-                className="cursor-pointer text-2xl font-logo">
+                className="cursor-pointer text-2xl font-semibold font-logo">
                     shelley chen
                 </Link>
 
@@ -40,13 +40,20 @@ const NavBar = () => {
             </div>
 
             <ul className="hidden md:flex">
-                {links.map(({ id, link }) => (
+                {links.map(({ id, link, href }) => (
                     <li
                         key={id}
                         className="mx-6 cursor-pointer capitalize bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
                     >
-                        <Link to={link} smooth duration={500}>
+                        <Link
+                        to={link} 
+                        smooth duration={500}
+                        href={href} 
+                        target="_blank"
+                        rel="noreferrer"
+                        >
                         {link}
+                        
                         </Link>
                     </li>
                 ))}
