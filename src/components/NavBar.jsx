@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiBars2, HiXMark } from "react-icons/hi2";
-import Resume from "../assets/pdf/Resume_Fall_2022.pdf";
+import Resume from "../assets/pdf/Shelley_Chen_Resume.pdf";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -19,11 +19,11 @@ const NavBar = () => {
       id: 3,
       link: "portfolio",
     },
-    {
-      id: 4,
-      link: "resume",
-      href: Resume,
-    },
+    // {
+    //   id: 4,
+    //   link: "resume",
+    //   href: Resume,
+    // },
   ];
 
   return (
@@ -51,14 +51,22 @@ const NavBar = () => {
               to={link}
               smooth
               duration={500}
-              href={href}
-              target="_blank"
-              rel="noreferrer"
+              // href={href}
+              // target="_blank"
+              // rel="noreferrer"
             >
               {link}
             </Link>
           </li>
         ))}
+        <a
+          href={Resume}
+          target="_blank"
+          rel="noreferrer"
+          className="mx-6 cursor-pointer bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
+        >
+          Resume
+        </a>
       </ul>
 
       <div

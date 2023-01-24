@@ -59,45 +59,6 @@ const Portfolio = () => {
           <p className="text-5xl font-semibold inline">Portfolio</p>
         </div>
 
-        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                    {projects.map(({id, src, name, description, href}) => (
-                        <a 
-                            key={id} 
-                            href={href} 
-                            className="duration-200 hover:scale-105 cursor-pointer"
-                            target="_blank"
-                            rel="noreferrer"
-                            >
-                            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-full">
-                                <img
-                                    src={src} 
-                                    alt="project" 
-                                    className="rounded-t-xl"
-                                />
-                                <div className="flex flex-col px-4 py-4">
-                                    <p className="text-2xl font-medium pb-4">{name}</p>
-                        
-                                    <p className="leading-7 pb-4">{description}</p>
-
-                                    {githubs.map(({id, href}) => (
-                                        <a 
-                                            className="pb-4 underline underline-offset-4 decoration-2 decoration-pink"
-                                            >
-                                            <span 
-                                                key={id}
-                                                href={href}
-                                                className="transition ease-in-out hover:bg-pink"
-                                                >
-                                                GitHub
-                                            </span>
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-                        </a>
-                    ))}
-                </div>  */}
-
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, src, name, description, href }) => (
             <div className="shadow-md border-4 border-dark_beige rounded-2xl h-full duration-200 hover:scale-105">

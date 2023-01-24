@@ -68,7 +68,7 @@ const Home = () => {
           <img
             src={Photo}
             alt="me"
-            className="rounded-full mx-auto w-3/4"
+            className="rounded-full mx-auto w-3/4 h-auto"
           />
         </div>
       </div>
