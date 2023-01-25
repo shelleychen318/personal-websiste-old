@@ -78,7 +78,7 @@ const Portfolio = () => {
                     <a
                       key={id}
                       href={href}
-                      className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md text-pink border-pink border-2 hover:bg-pink hover:text-light_beige"
+                      className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md text-pink font-medium border-pink border-2 hover:bg-pink hover:text-light_beige"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -90,7 +90,7 @@ const Portfolio = () => {
                   <a
                     key={id}
                     href={href}
-                    className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md bg-pink border-pink border-2 text-light_beige hover:bg-light_beige hover:text-pink"
+                    className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md font-medium bg-pink border-pink border-2 text-light_beige hover:bg-light_beige hover:text-pink"
                     target="_blank"
                     rel="noreferrer"
                   >

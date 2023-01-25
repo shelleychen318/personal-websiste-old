@@ -94,6 +94,14 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <a
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 cursor-pointer py-6 text-3xl capitalize"
+          >
+            Resume
+          </a>
         </ul>
       )}
     </div>

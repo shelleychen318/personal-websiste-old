@@ -41,7 +41,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center mx-4 md:mx-20 md:items-baseline">
-          <h2 className="text-3xl font-bold sm:text-7xl">
+          <h2 className="text-3xl font-semibold sm:text-7xl">
             Hi, I'm Shelley!
           </h2>
           <p className="py-6 max-w-lg md:text-xl">
