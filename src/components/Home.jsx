@@ -26,7 +26,7 @@ const Home = () => {
             {links.map(({ id, child, href }) => (
               <li
                 key={id}
-                className="flex justify-between items-center h-14 w-full hover:text-gray"
+                className="flex justify-between items-center h-14 w-full hover:text-pink"
               >
                 <a
                   href={href}

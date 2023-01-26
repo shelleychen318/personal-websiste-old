@@ -1,6 +1,7 @@
 import React from "react";
 import project1 from "../assets/portfolio/project1.jpg";
 import random2 from "../assets/portfolio/random2.jpg";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
   const projects = [
@@ -49,6 +50,19 @@ const Portfolio = () => {
     {
       id: 1,
       href: "https://github.com/shelleychen318/javascript-blog",
+    },
+  ];
+
+  const links = [
+    {
+      id: 1,
+      child: <FaLinkedinIn size={30} />,
+      href: "https://linkedin.com/in/shelleychenn",
+    },
+    {
+      id: 2,
+      child: <FaGithub size={30} />,
+      href: "https://github.com/shelleychen318",
     },
   ];
 
@@ -103,8 +117,19 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      <footer className="flex justify-center mb-10 text-lg">
-        &#169; Shelley Chen 2023
+      <footer className="flex flex-col items-center justify-center mb-10 text-lg">
+        <p>&#169; Shelley Chen 2023</p>
+        <div className="flex flex-row space-x-4 sm:hidden">
+          <ul>
+            {links.map(({ id, child, href }) => (
+              <li key={id} className="px-4 py-2  hover:text-pink">
+                <a href={href} target="_blank" rel="noreferrer">
+                  {child}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </footer>
     </div>
   );

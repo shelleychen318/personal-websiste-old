@@ -27,7 +27,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-brown-700 bg-light_beige fixed z-10 ">
       <div className="ml-2 font-medium md:ml-10">
         <Link
           to="home"
@@ -78,7 +78,7 @@ const NavBar = () => {
 
       {/* only show nav bar when nav icon is pressed */}
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-light_beige ">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-light_beige">
           {links.map(({ id, link }) => (
             <li
               key={id}
