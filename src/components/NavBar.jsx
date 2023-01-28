@@ -70,8 +70,12 @@ const NavBar = () => {
           Resume
         </a>
       </ul>
+      
       <div
-        onClick={() => setNav(!nav)}
+        onClick={() => {
+          setNav(!nav);
+          nav ?  enableScroll() : disableScroll();
+        }}
         className="cursor-pointer pr-4 z-10 text-text_colour md:hidden"
       >
         {nav ? <HiXMark size={30} /> : <HiBars2 size={30} />}
@@ -79,16 +83,20 @@ const NavBar = () => {
       {/* only show nav bar when nav icon is pressed */}
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-light_beige">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, offset }) => (
             <li
               key={id}
               className="px-4 cursor-pointer py-6 text-3xl capitalize"
             >
               <Link
-                onClick={() => setNav(!nav)}
+                onClick={() => {
+                          setNav(!nav);
+                          enableScroll();
+                        }}
                 to={link}
                 smooth
                 duration={500}
+                offset = {offset}
               >
                 {link}
               </Link>
@@ -107,5 +115,14 @@ const NavBar = () => {
     </div>
   );
 };
+
+function disableScroll(){
+  document.body.style.overflow = "hidden";
+}
+
+function enableScroll(){
+  document.body.style.overflow = null;
+}
+
 
 export default NavBar;
