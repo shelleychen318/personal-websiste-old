@@ -70,7 +70,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full">
+    <div name="portfolio" className="w-full h-screen">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full mt-24 mb-24">
         <div className="pb-16">
           <p className="text-5xl font-semibold inline">Portfolio</p>
@@ -116,7 +116,7 @@ const Portfolio = () => {
         </div>
       </div>
       <footer className="flex flex-col items-center justify-center mb-10 text-lg">
-        <p>&#169; Shelley Chen 2023</p>
+        <p className="mb-4">&#169; Shelley Chen 2023</p>
         <div className="flex flex-row space-x-4 sm:hidden">
           <ul>
             {links.map(({ id, child, href }) => (

@@ -23,11 +23,11 @@ const NavBar = () => {
   ];
 
   function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
+    return classes.filter(Boolean).join(" ");
   }
 
   const scrollPosition = useScrollPosition();
- 
+
   return (
     <div
       className={classNames(
