@@ -118,15 +118,13 @@ const Portfolio = () => {
       <footer className="flex flex-col items-center justify-center mb-10 text-lg">
         <p className="mb-4">&#169; Shelley Chen 2023</p>
         <div className="flex flex-row space-x-4 sm:hidden">
-          <ul>
             {links.map(({ id, child, href }) => (
-              <li key={id} className="px-4 py-2  hover:text-pink">
+              <div key={id} className="px-4 py-2  hover:text-pink">
                 <a href={href} target="_blank" rel="noreferrer">
                   {child}
                 </a>
-              </li>
+              </div>
             ))}
-          </ul>
         </div>
       </footer>
     </div>
