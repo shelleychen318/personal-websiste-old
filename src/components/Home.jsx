@@ -41,6 +41,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center mx-4 md:mx-20 md:items-baseline">
+          
           <h2 className="text-base font-semibold sm:text-7xl whitespace-nowrap">
             Hi, I'm Shelley!
           </h2>
