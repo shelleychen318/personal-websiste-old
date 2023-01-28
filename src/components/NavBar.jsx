@@ -11,14 +11,17 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
+      offset : 0
     },
     {
       id: 2,
       link: "about",
+      offset : 0
     },
     {
       id: 3,
       link: "portfolio",
+      offset : -80, // height of nav bar
     },
   ];
 
@@ -48,12 +51,12 @@ const NavBar = () => {
         {/* <a href="#" className="text-2xl font-logo">shelley chen</a> */}
       </div>
       <ul className="hidden md:flex">
-        {links.map(({ id, link, href }) => (
+        {links.map(({ id, link, offset }) => (
           <li
             key={id}
             className="mx-6 cursor-pointer capitalize bg-left-bottom bg-gradient-to-r from-pink to-pink bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_3px] transition-all duration-400 ease-out"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth duration={500} offset={offset} >
               {link}
             </Link>
           </li>
