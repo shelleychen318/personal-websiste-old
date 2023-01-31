@@ -28,21 +28,15 @@ const Home = () => {
                 key={id}
                 className="flex justify-between items-center h-14 w-full hover:text-pink"
               >
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={href} target="_blank" rel="noreferrer">
                   {child}
                 </a>
               </li>
             ))}
           </ul>
         </div>
-
-        <div className="flex flex-col min-w-fit max-w-md justify-center items-center mx-4 md:ml-20 md:items-baseline">
-          
-          <h2 className="text-3xl font-semibold sm:text-7xl ">
+        <div className="flex flex-col min-w-fit max-w-full justify-center items-center mx-4 md:ml-20 md:items-baseline">
+          <h2 className="flex text-3xl font-semibold sm:text-4xl lg:text-7xl ">
             Hi, I'm Shelley!
           </h2>
           <p className="py-6 max-w-xl md:text-xl">
@@ -64,12 +58,11 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        <div className="">
+        <div>
           <img
             src={Photo}
             alt="me"
-            className="rounded-full mx-auto w-2/3 min-w-0 md:w-full h-auto"
+            className="rounded-full mx-auto w-2/3 max-w-fit md:w-full h-auto"
           />
         </div>
       </div>
