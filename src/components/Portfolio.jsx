@@ -30,30 +30,30 @@ const Portfolio = () => {
       github: "https://github.com/shelleychen318/javascript-blog",
       demo: "https://javascript-blog.vercel.app/",
     },
-    {
-      id: 4,
-      image: random2,
-      name: "Project Title",
-      description: "Project Description",
-      github: "https://github.com/shelleychen318/javascript-blog",
-      demo: "https://javascript-blog.vercel.app/",
-    },
-    {
-      id: 5,
-      image: project1,
-      name: "Project Title",
-      description: "Project Description",
-      github: "https://github.com/shelleychen318/javascript-blog",
-      demo: "https://javascript-blog.vercel.app/",
-    },
-    {
-      id: 6,
-      image: project1,
-      name: "Project Title",
-      description: "Project Description",
-      github: "https://github.com/shelleychen318/javascript-blog",
-      demo: "https://javascript-blog.vercel.app/",
-    },
+    // {
+    //   id: 4,
+    //   image: random2,
+    //   name: "Project Title",
+    //   description: "Project Description",
+    //   github: "https://github.com/shelleychen318/javascript-blog",
+    //   demo: "https://javascript-blog.vercel.app/",
+    // },
+    // {
+    //   id: 5,
+    //   image: project1,
+    //   name: "Project Title",
+    //   description: "Project Description",
+    //   github: "https://github.com/shelleychen318/javascript-blog",
+    //   demo: "https://javascript-blog.vercel.app/",
+    // },
+    // {
+    //   id: 6,
+    //   image: project1,
+    //   name: "Project Title",
+    //   description: "Project Description",
+    //   github: "https://github.com/shelleychen318/javascript-blog",
+    //   demo: "https://javascript-blog.vercel.app/",
+    // },
   ];
 
   const links = [
@@ -70,8 +70,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full h-screen">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full mt-24 mb-24">
+    <div name="portfolio" className="w-full h-screen relative">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full mt-24">
         <div className="pb-16">
           <p className="text-5xl font-semibold inline">Portfolio</p>
         </div>
@@ -91,15 +91,15 @@ const Portfolio = () => {
                 <p className="leading-7 pb-4">{description}</p>
 
                 <div className="flex flex-row space-x-4">
-                    <a
-                      key={id}
-                      href={github}
-                      className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md text-pink font-medium border-pink border-2 hover:bg-pink hover:text-light_beige"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub
-                    </a>
+                  <a
+                    key={id}
+                    href={github}
+                    className="text-white w-fit px-4 py-2 my-4 flex items-center rounded-md text-pink font-medium border-pink border-2 hover:bg-pink hover:text-light_beige"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
                   <a
                     key={id}
                     href={demo}
@@ -115,17 +115,8 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      <footer className="flex flex-col items-center justify-center mb-10 text-lg">
-        <p className="mb-4">&#169; Shelley Chen 2023</p>
-        <div className="flex flex-row space-x-4 md:hidden">
-            {links.map(({ id, child, href }) => (
-              <div key={id} className="mx-2 mb-6">
-                <a href={href} target="_blank" rel="noreferrer">
-                  {child}
-                </a>
-              </div>
-            ))}
-        </div>
+      <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-10 w-fit">
+        &#169; Shelley Chen 2023
       </footer>
     </div>
   );

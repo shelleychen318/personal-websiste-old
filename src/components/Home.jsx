@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div name="home" className="h-screen w-full">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row border-b-4 border-b-dark_beige">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row border-b-4 border-b-dark_beige">
         <div className="hidden lg:flex flex-col top-[45%]">
           <ul>
             {links.map(({ id, child, href }) => (
@@ -69,7 +69,7 @@ const Home = () => {
           <img
             src={Photo}
             alt="me"
-            className="rounded-full mx-auto w-2/3 min-w-0 h-auto"
+            className="rounded-full mx-auto w-2/3 min-w-0 md:w-full h-auto"
           />
         </div>
       </div>
