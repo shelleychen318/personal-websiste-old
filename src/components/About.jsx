@@ -23,8 +23,8 @@ const About = () => {
         <br />
         <p className="md:text-xl">
           In my free time, I enjoy travelling, playing badminton, and trying out
-          new restaurants. I am also an avid Netflix watcher when I've got
-          enough time to do that!
+          new restaurants. I am also an avid Netflix watcher when I have enough
+          time to do that!
         </p>
       </div>
     </div>
