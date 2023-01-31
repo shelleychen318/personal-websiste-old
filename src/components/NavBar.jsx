@@ -21,7 +21,7 @@ const NavBar = () => {
     {
       id: 3,
       link: "portfolio",
-      offset : -80, // height of nav bar
+      offset : -160, // height of nav bar
     },
   ];
 
