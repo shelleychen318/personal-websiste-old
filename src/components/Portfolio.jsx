@@ -119,7 +119,7 @@ const Portfolio = () => {
         <p className="mb-4">&#169; Shelley Chen 2023</p>
         <div className="flex flex-row space-x-4 md:hidden">
             {links.map(({ id, child, href }) => (
-              <div key={id} className="px-4 py-2  hover:text-pink">
+              <div key={id} className="mx-2 mb-6">
                 <a href={href} target="_blank" rel="noreferrer">
                   {child}
                 </a>

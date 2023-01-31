@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div name="home" className="h-screen w-full">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row border-b-4 border-b-dark_beige">
+      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row border-b-4 border-b-dark_beige">
         <div className="hidden lg:flex flex-col top-[45%]">
           <ul>
             {links.map(({ id, child, href }) => (
@@ -40,14 +40,13 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col justify-center items-center mx-4 md:mx-20 md:items-baseline">
+        <div className="flex flex-col min-w-fit max-w-md justify-center items-center mx-4 md:ml-20 md:items-baseline">
           
-          <h2 className="text-base font-semibold sm:text-7xl whitespace-nowrap">
+          <h2 className="text-3xl font-semibold sm:text-7xl ">
             Hi, I'm Shelley!
           </h2>
-          <p className="py-6 max-w-lg md:text-xl">
-            I am first year Systems Design Engineering student at the University
-            of Waterloo!
+          <p className="py-6 max-w-xl md:text-xl">
+            Designer, developer, and lifelong learner.
           </p>
 
           <div>
@@ -70,7 +69,7 @@ const Home = () => {
           <img
             src={Photo}
             alt="me"
-            className="rounded-full mx-auto w-full h-auto"
+            className="rounded-full mx-auto w-2/3 min-w-0 h-auto"
           />
         </div>
       </div>
