@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { HiBars2, HiXMark } from "react-icons/hi2";
 import Resume from "../assets/pdf/Shelley_Chen_Resume.pdf";
 import { Link } from "react-scroll";

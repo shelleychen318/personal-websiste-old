@@ -1,7 +1,5 @@
 import React from "react";
 import project1 from "../assets/portfolio/project1.jpg";
-import random2 from "../assets/portfolio/random2.jpg";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
   const projects = [
@@ -22,27 +20,6 @@ const Portfolio = () => {
     //   github: "https://github.com/shelleychen318/javascript-blog",
     //   demo: "https://javascript-blog.vercel.app/",
     // },
-    // {
-    //   id: 3,
-    //   image: project1,
-    //   name: "Project Title",
-    //   description: "Project Description",
-    //   github: "https://github.com/shelleychen318/javascript-blog",
-    //   demo: "https://javascript-blog.vercel.app/",
-    // },
-  ];
-
-  const links = [
-    {
-      id: 1,
-      child: <FaLinkedinIn size={30} />,
-      href: "https://linkedin.com/in/shelleychenn",
-    },
-    {
-      id: 2,
-      child: <FaGithub size={30} />,
-      href: "https://github.com/shelleychen318",
-    },
   ];
 
   return (
