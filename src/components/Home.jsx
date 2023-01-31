@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../assets/img/photo.png";
+import Photo from "../assets/photo.png";
 import { HiArrowRight } from "react-icons/hi";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Link } from "react-scroll";
