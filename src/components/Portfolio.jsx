@@ -31,7 +31,7 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, image, name, description, github, demo }) => (
-            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-full duration-200 hover:scale-105">
+            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-fit duration-200 hover:scale-105">
               <a key={id} href={demo} target="_blank" rel="noreferrer">
                 <img src={image} alt="project" className="rounded-t-xl" />
               </a>
@@ -67,10 +67,10 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-10 w-fit">
+          &#169; Shelley Chen 2023
+        </footer>
       </div>
-      <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-10 w-fit">
-        &#169; Shelley Chen 2023
-      </footer>
     </div>
   );
 };
