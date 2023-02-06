@@ -1,5 +1,6 @@
 import React from "react";
 import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.png";
 
 const Portfolio = () => {
   const projects = [
@@ -8,18 +9,19 @@ const Portfolio = () => {
       image: project1,
       name: "Blog Website",
       description:
-        "A personal blog website where I share my thoughts on various topics. Built using React, GraphQL, Nextjs, and hosted on Vercel.",
+        "A personal blog website where I share my thoughts on various topics. Built using React, GraphQL, and Nextjs.",
       github: "https://github.com/shelleychen318/javascript-blog",
       demo: "https://javascript-blog.vercel.app/",
     },
-    // {
-    //   id: 2,
-    //   image: random2,
-    //   name: "Project Title",
-    //   description: "Project Description",
-    //   github: "https://github.com/shelleychen318/javascript-blog",
-    //   demo: "https://javascript-blog.vercel.app/",
-    // },
+    {
+      id: 2,
+      image: project2,
+      name: "Movie Details App",
+      description:
+        "Web app that displays details of any movie. Built using Next.js and IMDb API.",
+      github: "https://github.com/shelleychen318/movie-details-app",
+      demo: "https://movie-details-app.vercel.app",
+    },
   ];
 
   return (
@@ -31,7 +33,7 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, image, name, description, github, demo }) => (
-            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-fit duration-200 hover:scale-105">
+            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-full duration-200 hover:scale-105">
               <a key={id} href={demo} target="_blank" rel="noreferrer">
                 <img src={image} alt="project" className="rounded-t-xl" />
               </a>
