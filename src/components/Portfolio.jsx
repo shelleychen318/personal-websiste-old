@@ -25,7 +25,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full h-screen relative">
+    <div name="portfolio" className="w-full h-fit relative">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full mt-24">
         <div className="pb-16">
           <p className="text-5xl font-semibold inline">Portfolio</p>
@@ -69,10 +69,10 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-10 w-fit">
-          &#169; Shelley Chen 2023
-        </footer>
       </div>
+        {/* <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-10 w-fit">
+          &#169; Shelley Chen 2023
+        </footer> */}
     </div>
   );
 };
