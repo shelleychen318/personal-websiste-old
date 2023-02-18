@@ -48,7 +48,6 @@ const NavBar = () => {
           shelley chen
         </Link>
 
-        {/* <a href="#" className="text-2xl font-logo">shelley chen</a> */}
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link, offset }) => (
