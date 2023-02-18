@@ -9,7 +9,7 @@ const Portfolio = () => {
       image: project1,
       name: "Blog Website",
       description:
-        "A personal blog website where I share my thoughts on various topics. Built using React, GraphQL, and Nextjs.",
+        "A personal blog website where I share my thoughts on various topics. Built using React, Next.js, and GraphQL.",
       github: "https://github.com/shelleychen318/javascript-blog",
       demo: "https://javascript-blog.vercel.app/",
     },
