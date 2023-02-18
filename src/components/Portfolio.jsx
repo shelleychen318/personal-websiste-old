@@ -1,6 +1,7 @@
 import React from "react";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 const Portfolio = () => {
   const projects = [
@@ -16,11 +17,20 @@ const Portfolio = () => {
     {
       id: 2,
       image: project2,
-      name: "Movie Details App",
+      name: "Movie Details Website",
       description:
         "Web app that displays details of any movie. Built using Next.js and IMDb API.",
       github: "https://github.com/shelleychen318/movie-details-app",
       demo: "https://movie-details-app.vercel.app",
+    },
+    {
+      id: 3,
+      image: project3,
+      name: "Expense Tracker App",
+      description:
+        "Mobile app that displays your history of expenses as well as a chart that tracks the current month's spending. Built using SwiftUI for iOS.",
+      github: "https://github.com/shelleychen318/expense-tracker",
+      demo: "https://github.com/shelleychen318/expense-tracker#demo",
     },
   ];
 
@@ -30,13 +40,18 @@ const Portfolio = () => {
         <div className="pb-16">
           <p className="text-5xl font-semibold inline">Portfolio</p>
         </div>
-
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, image, name, description, github, demo }) => (
-            <div className="shadow-md border-4 border-dark_beige rounded-2xl h-full duration-200 hover:scale-105">
-              <a key={id} href={demo} target="_blank" rel="noreferrer">
-                <img src={image} alt="project" className="rounded-t-xl" />
-              </a>
+            <div className="shadow-md border-4 border-dark_beige rounded-2xl w-full h-full duration-200 hover:scale-105">
+              
+                <a key={id} href={demo} target="_blank" rel="noreferrer">
+                  <img
+                    src={image}
+                    alt="project"
+                    className="rounded-t-xl w-[100%] h-44 object-fill"
+                  />
+                </a>
+
               <div className="flex flex-col px-4 py-4">
                 <a key={id} href={demo} target="_blank" rel="noreferrer">
                   <p className="text-2xl font-medium pb-4 hover:underline underline-offset-4 decoration-2 decoration-text_colour">
