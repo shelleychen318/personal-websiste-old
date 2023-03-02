@@ -1,5 +1,3 @@
 # Portfolio Website
 
-Personal portfolio website made with React.
-
-Link to website: https://shelleychen.netlify.app/ 
+This website is outdated. Check out my current personal website [here](https://github.com/shelleychen318/personal-website)!
